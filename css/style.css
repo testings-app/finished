@@ -58,6 +58,7 @@ header {
     color: black;
     padding: 7px;
     border: none;
+    top: 1px;
     position: relative;
     right: 10px;
     cursor: pointer;
