@@ -1,5 +1,7 @@
 const inp = document.getElementById("inp");
-inp.addEventListener("keyup", () => {
+const form = document.getElementById('form');
+form.addEventListener('submit', (e) => {
+    e.preventDefault()
     const obtener = async() => {
         try {
             const api = await fetch(`https://www.omdbapi.com/?i=tt3896198&apikey=8721d15c&s=${inp.value}`);
@@ -74,6 +76,7 @@ inp.addEventListener("keyup", () => {
     };
     obtener();
 });
+// });
 
 
 /*=============================================
